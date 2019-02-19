@@ -1,0 +1,21 @@
+<config>
+
+	<!--	GENERATOR UPGRADE 1	-->
+<append xpath="/blocks">
+	<block name="generatorbank_MaxFuel_1">
+		<property name="Extends" value="generatorbank" param1="MaxFuel"/>
+		<property name="CustomIcon" value="generatorbank"/>
+		<property name="CustomIconTint" value="ffb0b0"/>
+		<property name="MaxFuel" value="2000"/>
+	</block>
+	
+	<!--	GENERATOR UPGRADE 2	-->		
+	<block name="generatorbank_MaxFuel_2">
+		<property name="Extends" value="generatorbank" param1="MaxFuel"/>
+		<property name="CustomIcon" value="generatorbank"/>
+		<property name="CustomIconTint" value="ffb0b0"/>
+		<property name="MaxFuel" value="4000"/>
+	</block>
+	
+</append>
+</config>

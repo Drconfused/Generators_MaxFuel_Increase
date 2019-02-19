@@ -1,0 +1,18 @@
+<config>
+
+<append xpath="/recipes">
+	<recipe name="generatorbank_MaxFuel_1" count="1" craft_area="workbench" tags="learnable">
+		<ingredient name="resourceForgedIron" count="40"/>
+		<ingredient name="resourceMechanicalParts" count="30"/>
+		<ingredient name="resourceElectricParts" count="30"/>
+	</recipe>
+	
+	<recipe name="generatorbank_MaxFuel_2" count="1" craft_area="workbench" tags="learnable">
+		<ingredient name="resourceForgedIron" count="80"/>
+		<ingredient name="resourceMechanicalParts" count="70"/>
+		<ingredient name="resourceElectricParts" count="70"/>
+	</recipe>
+
+</append>
+
+</config>
