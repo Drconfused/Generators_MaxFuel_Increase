@@ -4,18 +4,59 @@
 <append xpath="/blocks">
 	<block name="generatorbank_MaxFuel_1">
 		<property name="Extends" value="generatorbank" param1="MaxFuel"/>
-		<property name="CustomIcon" value="generatorbank"/>
-		<property name="CustomIconTint" value="ffb0b0"/>
+		<property name="CustomIcon" value="Drs_Chipped_Generatorbank"/>
+	<!--	<property name="CustomIconTint" value="ffb0b0"/>  -->
 		<property name="MaxFuel" value="2000"/>
+	<!--	<property name="OutputPerFuel" value="11250"/>
+		<property name="MaxPower" value="12250"/>	-->
+		<property name="OutputPerStack" value="125"/>
 	</block>
 	
 	<!--	GENERATOR UPGRADE 2	-->		
 	<block name="generatorbank_MaxFuel_2">
 		<property name="Extends" value="generatorbank" param1="MaxFuel"/>
-		<property name="CustomIcon" value="generatorbank"/>
+		<property name="CustomIcon" value="Drs_Chipped_Generatorbank"/>
 		<property name="CustomIconTint" value="ffb0b0"/>
 		<property name="MaxFuel" value="4000"/>
+	<!--	<property name="OutputPerFuel" value="300000"/>
+		<property name="MaxPower" value="12250"/>	-->
+		<property name="OutputPerStack" value="200"/>
 	</block>
 	
 </append>
 </config>
+
+<!--
+
+ENGINE STUFF
+		how dependent is the generatorbank on the properties contained in the engine? Does changing the engine that can be slotted change the generator properties? 
+			at the very least I suspect that the engine property name="DegradationMax" value is used by the generator bank. and it appears give a tiered true value with the 1000,6000 values.
+	<block name="generatorbank"> 
+		<property name="SlotItem" value="smallEngine"/>
+		
+	<item name="smallEngine">	
+		<property name="VehicleSlotType" value="engine"/>	
+		<property class="Attributes">
+			<property name="DegradationMax" value="1000,6000"/>
+			<property name="VehicleNoise" value="1,0.1"/>
+			<property name="VehicleMaxSpeed" value="5,18"/>
+			<property name="VehicleAcceleration" value="7,14"/>
+			<property name="VehicleMetersPerLiter" value="8,12"/>
+			<property name="VehicleIdleSecondsPerLiter" value="6,12"/>
+			<property name="VehicleStartDelayInSeconds" value="1,0.1"/>
+			<property name="VehicleStartChance" value="0.5,0.99"/>
+			<property name="VehicleTankSize" value="1000, 2000"/>
+			<property name="VehicleFuelItem" value="ammoGasCan"/>
+		</property>
+		
+	<block name="solarbank">
+		<property name="SlotItem" value="solarCell"/>
+	<block name="batterybank">	
+		<property name="SlotItem" value="carBattery"/>
+		<effect_group>
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="5000,10000" tier="1,6"/>
+		</effect_group>
+
+
+-->
